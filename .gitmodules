@@ -1,0 +1,6 @@
+[submodule "02 - MODULES/Commlink/commlink"]
+	path = 02 - MODULES/Commlink/commlink
+	url = git@github.com:RocinRykor/commlink.git
+[submodule "02 - MODULES/Commlink/commlink-proto"]
+	path = 02 - MODULES/Commlink/commlink-proto
+	url = git@github.com:RocinRykor/commlink-proto.git

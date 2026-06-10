@@ -1,0 +1,40 @@
+# Rust build artifacts
+**/target/
+**/Cargo.lock
+
+# SQLite
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+# SQLx
+**/.sqlx/
+
+# Environment files
+**/.env
+**/*.env
+
+# Generated protobuf
+**/src/generated/
+
+# OS
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+**/*.iml
+**/.fleet/
+
+# Logs
+**/*.log
+
+# Generated context dumps
+**/*_context.md
+
+# Obsidian app state (keep vault, not app state)
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/cache
