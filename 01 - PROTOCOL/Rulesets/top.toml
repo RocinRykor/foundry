@@ -1,0 +1,8 @@
+ruleset_id = "log"
+
+[members]
+local = [
+    "session",
+    "mission",
+    "player",
+]

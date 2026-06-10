@@ -1,0 +1,81 @@
+# Player — ayatan sculptures, trade, nemesis/larvling
+# namespace segment: player
+# full prefix: warframe.log.player
+
+# ─── AYATAN SCULPTURE ────────────────────────────────────────────────────────
+# CONFIRMED: OroFusex[A-Z]Deco = sculpture 3D asset loaded in level (~45s before pickup)
+# CONFIRMED: OroFusexPickupDeco = pickup interaction asset
+# CONFIRMED: StoreIcons/Pickup = noise, excluded
+# NOTE: Suffix letter (C, G, A, B, D, E) identifies sculpture variant
+
+[[rules]]
+signal_type = "ayatan.sculpture.nearby.{sculpture}"
+patterns = [
+    { Regex = { matches = ["ResourceLoader [^ ]+ \\(/Lotus/Objects/Gameplay/(?P<sculpture>OroFusex[A-Z])Deco\\)"] } }
+]
+exclude = ["StoreIcons", "Pickup"]
+
+[[rules]]
+signal_type = "ayatan.sculpture.picked_up"
+patterns = [
+    { Regex = { matches = ["ResourceLoader [^ ]+ \\(/Lotus/Objects/Gameplay/OroFusexPickupDeco\\)"] } }
+]
+
+# ─── TRADE ───────────────────────────────────────────────────────────────────
+# CONFIRMED: WFM whisper pattern from AP.log
+# CONFIRMED: Trade invite dialog
+# CONFIRMED: Successful trade dialog
+
+[[rules]]
+signal_type = "trade.whisper.wfm.{player_name}.sent"
+patterns = [
+    { Regex = { matches = ["IRC out: PRIVMSG (?P<player_name>\\S+) :Hi! I want to buy:"] } }
+]
+
+[[rules]]
+signal_type = "trade.session.invite.received.{player_name}"
+patterns = [
+    { Regex = { matches = ["Dialog::CreateOkCancel\\(description=(?P<player_name>\\S+) wants to trade with you"] } }
+]
+
+[[rules]]
+signal_type = "trade.session.completed.success"
+patterns = [
+    { Regex = { matches = ["Dialog::CreateOk\\(description=The trade was successful!"] } }
+]
+
+# ─── NEMESIS — LARVLING ───────────────────────────────────────────────────────
+# CONFIRMED: Larvling spawns via AI OnAgentCreated with /Npc/KuvaLarvling* path
+# CONFIRMED: Weapon via KuvaEximus.lua "fixed to weapon" — last path segment is weapon name
+# CONFIRMED: Abandoned weapon line fires just before fixed to weapon
+
+[[rules]]
+signal_type = "nemesis.larvling.spawned"
+patterns = [
+    { Regex = { matches = ["AI \\[Info\\]: OnAgentCreated /Npc/KuvaLarvling"] } }
+]
+
+[[rules]]
+signal_type = "nemesis.larvling.weapon.{weapon_name}.available"
+patterns = [
+    { Regex = { matches = ["Script \\[Info\\]: KuvaEximus\\.lua: \\d+ fixed to weapon \\d+ /Lotus/StoreItems/Weapons/Grineer/KuvaLich/.+/(?P<weapon_name>Kuva\\w+)"] } }
+]
+
+[[rules]]
+signal_type = "nemesis.larvling.weapon.rerolled"
+patterns = [
+    { Regex = { matches = ["Script \\[Info\\]: KuvaEximus\\.lua: .+ is abandoned"] } }
+]
+
+# ─── DISCOVERY QUEUE ──────────────────────────────────────────────────────────
+# Known to exist, exact lines not yet captured:
+# - player.nemesis.larvling.mercy_killed
+# - player.nemesis.lich.created
+# - player.nemesis.lich.appeared
+# - player.nemesis.lich.vanquished
+# - player.nemesis.lich.converted
+# - player.session.mission.result.failed
+# - player.session.location.1999hub.entered
+# - player.session.location.zariman.entered
+# - player.session.location.cetus.entered
+# - player.session.location.fortuna.entered

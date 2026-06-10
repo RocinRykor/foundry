@@ -1,0 +1,80 @@
+# Mission — state, extraction, relic rewards, reward anomalies
+# namespace segment: mission
+# full prefix: warframe.log.mission
+
+# ─── STATE ───────────────────────────────────────────────────────────────────
+# CONFIRMED: MissionName line observed across all mission logs
+
+[[rules]]
+signal_type = "name.identified.{mission_name}"
+patterns = [
+    { Regex = { matches = ["Script \\[Info\\]: MissionIntro\\.lua: MissionName: (?P<mission_name>.+)"] } }
+]
+
+# CONFIRMED: SS_WAITING_FOR_PLAYERS to SS_STARTED is the mission start signal
+[[rules]]
+signal_type = "state.started"
+patterns = [
+    { Regex = { matches = ["Net \\[Info\\]: GameRulesImpl - changing state from SS_WAITING_FOR_PLAYERS to SS_STARTED"] } }
+]
+
+# CONFIRMED: SS_STARTED to SS_ENDING is mission end
+[[rules]]
+signal_type = "state.ending"
+patterns = [
+    { Regex = { matches = ["Net \\[Info\\]: GameRulesImpl - changing state from SS_STARTED to SS_ENDING"] } }
+]
+
+# ─── EXTRACTION ───────────────────────────────────────────────────────────────
+# CONFIRMED: ExtractionTimer EOM line fires when all players extract
+
+[[rules]]
+signal_type = "extraction.completed"
+patterns = [
+    { Regex = { matches = ["ExtractionTimer\\.lua: EOM: All players extracting"] } }
+]
+
+# ─── RELIC REWARD ─────────────────────────────────────────────────────────────
+# CONFIRMED: Full sequence observed in Generic.log
+# Screen open → item received → host ready → screen close
+
+[[rules]]
+signal_type = "relic.reward.screen.opened"
+patterns = [
+    { Regex = { matches = ["VoidProjections: OpenVoidProjectionRewardScreen"] } }
+]
+
+[[rules]]
+signal_type = "relic.reward.item.received"
+patterns = [
+    { Regex = { matches = ["VoidProjections: [0-9a-f]+ gets reward /Lotus/"] } }
+]
+
+[[rules]]
+signal_type = "relic.reward.screen.ready"
+patterns = [
+    { Regex = { matches = ["VoidProjections: Host has reward info for all players now!"] } }
+]
+
+[[rules]]
+signal_type = "relic.reward.screen.closed"
+patterns = [
+    { Regex = { matches = ["VoidProjections: CloseVoidProjectionRewardScreen"] } }
+]
+
+# ─── REWARD ANOMALIES ─────────────────────────────────────────────────────────
+# CONFIRMED: Gene_Farming_Thumpers.log
+# NULL reward entry fires once at session load when a reward table has a bad entry
+# WRONG NUM REWARDS fires at end of match when reward count doesn't match expected
+
+[[rules]]
+signal_type = "reward.table.null_entry"
+patterns = [
+    { Regex = { matches = ["Sys \\[Error\\]: .+ had a NULL reward entry"] } }
+]
+
+[[rules]]
+signal_type = "reward.count_mismatch"
+patterns = [
+    { Regex = { matches = ["EndOfMatch\\.lua: WRONG NUM REWARDS"] } }
+]
