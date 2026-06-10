@@ -38,3 +38,6 @@ Thumbs.db
 **/.obsidian/workspace.json
 **/.obsidian/workspace-mobile.json
 **/.obsidian/cache
+
+# Context
+context_dump_decrypt.sh

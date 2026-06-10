@@ -49,13 +49,7 @@ echo "" >> "$OUTPUT"
 echo "## Submodule Last Commits" >> "$OUTPUT"
 echo "" >> "$OUTPUT"
 
-git submodule foreach --quiet '
-    echo "### '$name'"
-    echo "- Path: $sm_path"
-    echo "- Branch: $(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo unknown)"
-    echo "- Last commit: $(git log -1 --format="%h — %s (%ar)" 2>/dev/null || echo unknown)"
-    echo ""
-' >> "$OUTPUT" 2>/dev/null || echo "(submodules not yet initialized)" >> "$OUTPUT"
+git submodule foreach --quiet 'echo "### $name\n- Path: $sm_path\n- Branch: $(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo unknown)\n- Last commit: $(git log -1 --format="%h — %s (%ar)" 2>/dev/null || echo unknown)\n"' >> "$OUTPUT" 2>/dev/null || echo "(submodules not yet initialized)" >> "$OUTPUT"
 
 # --- Vault documents ---
 echo "## Vault Documents" >> "$OUTPUT"
