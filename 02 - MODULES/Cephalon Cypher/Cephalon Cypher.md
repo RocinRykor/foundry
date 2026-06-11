@@ -1,6 +1,6 @@
 # Cephalon Cypher
 
-Cephalon Cypher is the domain instance pattern. It is how [[Decrypt]] reaches into a space and begins acting on it.
+Cephalon Cypher is the domain instance pattern. It is how [[00 - Decrypt]] reaches into a space and begins acting on it.
 
 It is not a Warframe tool. The Warframe instance is first because the feedback loop is tight and the cost of being wrong is zero. Every other domain gets its own instance using the same pattern.
 

@@ -1,6 +1,6 @@
 # requires.management
 
-requires.management is the central hub platform and subdomain router for [[Decrypt]]'s web-facing layer. It manages identity, authentication, and routes traffic to the correct [[Cephalon Cypher]] chassis instance.
+requires.management is the central hub platform and subdomain router for [[00 - Decrypt]]'s web-facing layer. It manages identity, authentication, and routes traffic to the correct [[Cephalon Cypher]] chassis instance.
 
 ---
 
@@ -55,4 +55,4 @@ requires.management is the central hub platform and subdomain router for [[Decry
 
 - [[Cephalon Cypher]] — the instances requires.management routes to
 - [[chassis]] — the interface layer requires.management hosts
-- [[Decrypt]] — the ecosystem this infrastructure serves
+- [[00 - Decrypt]] — the ecosystem this infrastructure serves

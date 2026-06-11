@@ -50,7 +50,7 @@ Without a lid, the mana amplifies instead of converting. The loop stays open. Th
 
 ---
 
-## Implementation in [[Decrypt]]
+## Implementation in [[00 - Decrypt]]
 
 State Casting requires:
 

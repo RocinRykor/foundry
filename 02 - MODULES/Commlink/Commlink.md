@@ -1,6 +1,6 @@
 # Commlink
 
-Commlink is the nervous system of [[Decrypt]]. It is not a tool and not a service — it is the primitive that makes everything else possible. The language by which Decrypt communicates internally, externally, and eventually with itself.
+Commlink is the nervous system of [[00 - Decrypt]]. It is not a tool and not a service — it is the primitive that makes everything else possible. The language by which Decrypt communicates internally, externally, and eventually with itself.
 
 Every Decrypt component carries a Commlink node the same way every cell carries DNA. The node knows how to announce itself, listen, and send. Intelligence lives at the edges. The center just routes.
 

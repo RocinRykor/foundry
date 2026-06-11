@@ -1,6 +1,6 @@
 # Foundry
 
-Foundry is the workspace scaffolding tool. It is part of the [[Decrypt]] toolbox.
+Foundry is the workspace scaffolding tool. It is part of the [[00 - Decrypt]] toolbox.
 
 ---
 
@@ -37,5 +37,5 @@ Not yet implemented. Needs more workspaces built before the patterns are clear e
 
 ## Related
 
-- [[Decrypt]] — the ecosystem Foundry serves
+- [[00 - Decrypt]] — the ecosystem Foundry serves
 - [[Cephalon Cypher]] — the workspace shape Foundry will eventually template

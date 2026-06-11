@@ -1,8 +1,8 @@
 # Expression
 
-Expression is how [[Decrypt]] faces outward — how it presents itself to the person it serves, and how it carries the identity of the world it was born from.
+Expression is how [[00 - Decrypt]] faces outward — how it presents itself to the person it serves, and how it carries the identity of the world it was born from.
 
-It is one of the four themes [[Decrypt]] is built on.
+It is one of the four themes [[00 - Decrypt]] is built on.
 
 ---
 

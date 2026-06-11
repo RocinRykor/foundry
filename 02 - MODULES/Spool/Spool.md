@@ -1,6 +1,6 @@
 # Spool
 
-Spool is the session re-entry tool. It is the thing [[Decrypt]] needed to exist before it could build itself.
+Spool is the session re-entry tool. It is the thing [[00 - Decrypt]] needed to exist before it could build itself.
 
 It answers one question when you open a project: **Where did I leave off, and what do I do next?**
 
@@ -67,5 +67,5 @@ spool projects
 
 ## Related
 
-- [[Decrypt]] — the ecosystem Spool enables
+- [[00 - Decrypt]] — the ecosystem Spool enables
 - [[Depot]] — Spool is the session-level memory; Depot is the life-level memory

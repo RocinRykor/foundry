@@ -2,7 +2,7 @@
 
 Integrity is the guarantee that what moves through [[Commlink]] is what it claims to be, going where it is supposed to go, carrying the authority it says it has.
 
-It is one of the four themes [[Decrypt]] is built on.
+It is one of the four themes [[00 - Decrypt]] is built on.
 
 ---
 

@@ -1,8 +1,8 @@
 # Awareness
 
-Awareness is how [[Decrypt]] perceives the world. Before the system can act on anything, it has to be able to see it — without interpreting, without judging, without losing signal.
+Awareness is how [[00 - Decrypt]] perceives the world. Before the system can act on anything, it has to be able to see it — without interpreting, without judging, without losing signal.
 
-It is one of the four themes [[Decrypt]] is built on.
+It is one of the four themes [[00 - Decrypt]] is built on.
 
 ---
 

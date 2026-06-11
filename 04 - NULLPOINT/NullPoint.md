@@ -1,6 +1,6 @@
 # Null_Point()
 
-Null_Point() is the TTRPG system, novel series, and setting that [[Decrypt]] was born from. It is the origin of the design language, the naming conventions, and the character of the ecosystem.
+Null_Point() is the TTRPG system, novel series, and setting that [[00 - Decrypt]] was born from. It is the origin of the design language, the naming conventions, and the character of the ecosystem.
 
 It is not a separate project that runs alongside Decrypt. It is the fiction that Decrypt lives inside. The aesthetic is load-bearing.
 
@@ -26,7 +26,7 @@ The sprawl is not a server room. It is old asphalt and rain-wet concrete. The si
 
 ## The Design Language
 
-All [[Decrypt]] surfaces are built on the Null_Point() v0.2 design system.
+All [[00 - Decrypt]] surfaces are built on the Null_Point() v0.2 design system.
 
 ### Palette
 

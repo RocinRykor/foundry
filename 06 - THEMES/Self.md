@@ -1,8 +1,8 @@
 # Self
 
-Self is how [[Decrypt]] knows what it is, maintains its own continuity, and persists through failure, time, and the gaps between sessions.
+Self is how [[00 - Decrypt]] knows what it is, maintains its own continuity, and persists through failure, time, and the gaps between sessions.
 
-It is one of the four themes [[Decrypt]] is built on.
+It is one of the four themes [[00 - Decrypt]] is built on.
 
 ---
 

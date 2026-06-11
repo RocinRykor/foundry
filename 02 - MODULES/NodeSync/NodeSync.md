@@ -1,6 +1,6 @@
 # NodeSync
 
-NodeSync is the [[Commlink]] module that implements the Resilience trait from [[Self]]. It is the cluster-wide self-model — [[Decrypt]] knowing what Decrypt is.
+NodeSync is the [[Commlink]] module that implements the Resilience trait from [[Self]]. It is the cluster-wide self-model — [[00 - Decrypt]] knowing what Decrypt is.
 
 Without NodeSync, Decrypt is a collection of tools. With NodeSync, it is an organism.
 

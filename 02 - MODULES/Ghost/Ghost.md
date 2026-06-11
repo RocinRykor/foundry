@@ -1,6 +1,6 @@
 # Ghost
 
-Ghost is the [[Decrypt]] Discord bot and table companion for [[Null_Point()]] TTRPG sessions. It externalizes state the GM and players cannot be trusted to reliably remember across sessions.
+Ghost is the [[00 - Decrypt]] Discord bot and table companion for [[Null_Point()]] TTRPG sessions. It externalizes state the GM and players cannot be trusted to reliably remember across sessions.
 
 It is a Decrypt application in the truest sense — it solves the same problem at the table that Decrypt solves in life.
 
