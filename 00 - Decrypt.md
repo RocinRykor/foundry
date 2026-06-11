@@ -1,4 +1,5 @@
 
+# What is Decrypt?
 Decrypt is a self-composing intelligence organism. 
 Its purpose is to give me admin access to his own life
 
@@ -9,6 +10,12 @@ Technically that hasn't happened yet, but I think I am well on my way to making 
 
 I know what I want a few milestones to look like on this journey and I don't know how far it will go or what milestone will be reached, but I am going to fight tooth and nail to make this a reality.
 
+## Stance on LLM
+This is a topic that cannot be avoided right now so I will make my position clear
+[[LLM and Generative AI Disclosure]]
+
+Given my stance I will inform whenever Generative AI code exists in my project, please know that I am transitioning way from using it so much and will reclassify things when I feel they meet with my standards, but I will continue to use it as seed data where I find it needed.
+
 ---
 ## Structure
 
@@ -16,9 +23,7 @@ Everything in Decrypt interconnected using [[Commlink]] so having a node map is 
 
 Decrypt will act as a central hub which will spawn instances of [[Cephalon Cypher]], which operates on the Commlink Protocol that all Decrypt apps are built on, Decrypt will then control all of the connected nodes through Commlink signals
 
-Each directory will have a top file
-
-// ADHD STOPPED HERE
+[[Foundry]]
 
 ---
 
@@ -58,6 +63,6 @@ Every component must answer:
 
 If a feature requires remembering to use it, it is already failing. Build for the user who forgot they were building it.
 
-## Stance on LLM
+
 
 

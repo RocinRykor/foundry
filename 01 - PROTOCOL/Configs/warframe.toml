@@ -1,5 +1,0 @@
-node_id = "cephalon-cypher-neuroptics"
-namespace = "warframe"
-nexus_addr = "grpc://localhost:50051"
-heartbeat_interval_ms = 5000
-tail_mode = "full"   # or "live"
