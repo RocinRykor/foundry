@@ -4,3 +4,6 @@
 [submodule "02 - MODULES/Commlink/commlink-proto"]
 	path = 02 - MODULES/Commlink/commlink-proto
 	url = git@github.com:RocinRykor/commlink-proto.git
+[submodule "decrypt"]
+	path = decrypt
+	url = git@github.com:RocinRykor/decrypt-cargo.git

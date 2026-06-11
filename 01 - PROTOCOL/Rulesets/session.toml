@@ -57,3 +57,12 @@ signal_type = "location.tradehub.entered"
 patterns = [
     { Regex = { matches = ["ThemedSquadOverlay\\.lua: Cached mission name=Maroo's Bazaar"] } }
 ]
+
+
+# ─── Shut Down ─────────────────────────────────────────────────────────────────
+
+[[rules]]
+signal_type = "shutdown"
+patterns = [
+    { Regex = { matches = ["Sys \\[Info\\]: ===\\[ Exiting main loop \\]"] } }
+]
