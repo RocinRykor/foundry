@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, Foundry!");
+    println!("Foundry: Project Cephalon Template Manager and Builder");
+    println!("Under Construction");
 }
